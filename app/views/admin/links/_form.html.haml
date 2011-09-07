@@ -15,7 +15,7 @@
     = f.label :url
     = f.text_field :url, :size => 50
   %div{:class => "form-option #{cycle('even', 'odd')}"}
-    = f.label :tag_list
+    = f.label :tag_list, "Keyword Tag List"
     = f.text_field :tag_list, :size => 50
   %div{:class => "form-option #{cycle('even', 'odd')}"}
     .options-title Options
@@ -24,13 +24,13 @@
       = f.label :public, "Approve for public viewing"
     .options
       = f.check_box :restrict_link
-      = f.label :restrict_link, "Hide Detail Lising Page"
+      = f.label :restrict_link, "Hide Detail Listing Page"
     = clear
 
   %h2= f.label :blurb
 
   %div
-    = f.text_area :blurb, :size => "100x40", :class => "mceEditor full_width"
+    = f.text_area :blurb, :size => "00x00", :class => "mceEditor full_width"
 
   %h2= f.label :body
   .options
